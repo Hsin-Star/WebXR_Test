@@ -67,15 +67,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       scene.addNode(arObject);
 
       let reticle = new Gltf2Node({url: 'gltf/reticle/reticle.gltf'});
-      reticle.scale = [0.1, 0.1, 0.1];
       reticle.visible = false;
       scene.addNode(reticle);
       
-      //let flower = new Gltf2Node({url: 'gltf/sunflower/sunflower.gltf'});
-      //arObject.addNode(flower);
-
-      let flower = new Gltf2Node({url: 'gltf/JapanFood/Sushi.gltf'});
-      flower.scale = [0.25, 0.25, 0.25];
+      let flower = new Gltf2Node({url: 'gltf/sunflower/sunflower.gltf'});
       arObject.addNode(flower);
 
       // Having a really simple drop shadow underneath an object helps ground
@@ -84,7 +79,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       //vec3.set(shadow.scale, 0.15, 0.15, 0.15);
       //arObject.addNode(shadow);
 
-      const MAX_FLOWERS = 30;
+      const MAX_FLOWERS = 10;
       let flowers = [];
 
       // Ensure the background is transparent for AR.
