@@ -67,6 +67,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
+      let reticle = new Gltf2Node({url: 'gltf/reticle/reticle.gltf'});
+      reticle.scale = [0.3, 0.3, 0.3];
+      reticle.visible = false;
+      scene.addNode(reticle);
+      
       //let flower = new Gltf2Node({url: 'gltf/sunflower/sunflower.gltf'});
       //arObject.addNode(flower);
 
@@ -74,10 +79,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       flower.scale = [0.25, 0.25, 0.25];
       arObject.addNode(flower);
       
-      let reticle = new Gltf2Node({url: 'gltf/reticle/reticle.gltf'});
-      reticle.scale = [0.3, 0.3, 0.3];
-      reticle.visible = false;
-      scene.addNode(reticle);
+      let spotlight = new THREE.SpotLight(0xFFFFFF);
+      spotlight.position.set(3, 3, 3);
+      spotlight.target = flower;
+      arObject.addNode(spotlight);
 
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
