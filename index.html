@@ -34,7 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <body>
     <header>
       <details open>
-        <summary>Hit Test 3</summary>
+        <summary>Hit Test 4</summary>
         <p>
           This sample demonstrates use of hit testing to place virtual objects on real-world surfaces.
         </p>
@@ -67,14 +67,15 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       scene.addNode(arObject);
 
       let reticle = new Gltf2Node({url: 'gltf/reticle/reticle.gltf'});
+      vec3.set(reticle.scale, 0.5, 0.5, 0.5);
       reticle.visible = false;
       scene.addNode(reticle);
       
-      //let flower = new Gltf2Node({url: 'gltf/sunflower/sunflower.gltf'});
-      //arObject.addNode(flower);
-      
-      let flower = new Gltf2Node({url: 'gltf/space/space.gltf'});
+      let flower = new Gltf2Node({url: 'gltf/sunflower/sunflower.gltf'});
       arObject.addNode(flower);
+      
+      //let flower = new Gltf2Node({url: 'gltf/space/space.gltf'});
+      //arObject.addNode(flower);
 
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
