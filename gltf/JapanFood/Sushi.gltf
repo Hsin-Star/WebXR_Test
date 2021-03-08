@@ -357,8 +357,8 @@
    "buffers" : [
       {
          "byteLength" : 2420640,
-         "name" : "model",
-         "uri" : "model.bin"
+         "name" : "Sushi",
+         "uri" : "Sushi.bin"
       }
    ],
    "cameras" : [
