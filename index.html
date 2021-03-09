@@ -34,7 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <body>
     <header>
       <details open>
-        <summary>Hit Test 4</summary>
+        <summary>Hit Test 5</summary>
         <p>
           This sample demonstrates use of hit testing to place virtual objects on real-world surfaces.
         </p>
@@ -72,6 +72,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       
       //let flower = new Gltf2Node({url: 'gltf/sunflower/sunflower.gltf'});
       let flower = new Gltf2Node({url: 'gltf/BighornSheep/BighornSheep.gltf'});
+      flower.scale = [0.1, 0.1, 0.1];
+      
       arObject.addNode(flower);
 
       // Having a really simple drop shadow underneath an object helps ground
