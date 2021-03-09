@@ -144,7 +144,7 @@
       {
          "alphaMode" : "OPAQUE",
          "doubleSided" : true,
-         "name" : "BighornSheep_mat",
+         "name" : "None",
          "pbrMetallicRoughness" : {
             "baseColorTexture" : {
                "index" : 0,
