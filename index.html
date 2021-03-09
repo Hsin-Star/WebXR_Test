@@ -34,7 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <body>
     <header>
       <details open>
-        <summary>Hit Test 7</summary>
+        <summary>Hit Test 8</summary>
         <p>
           This sample demonstrates use of hit testing to place virtual objects on real-world surfaces.
         </p>
@@ -124,8 +124,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           });
 
           renderer = new Renderer(gl);
-
-          setNormals(gl);
           
           scene.setRenderer(renderer);
         }
@@ -148,6 +146,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
           session.requestAnimationFrame(onXRFrame);
         });
+        
+        setNormals(gl);
       }
 
       function onEndSession(session) {
@@ -216,6 +216,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         scene.endFrame();
       }
+      
       function setNormals(gl) {
         var normals = new Float32Array([
           // left column front
