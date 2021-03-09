@@ -136,7 +136,7 @@
    "images" : [
       {
          "mimeType" : "image/png",
-         "name" : "BighornSheep_mat-image",
+         "name" : "BighornSheep_BaseColor",
          "uri" : "BighornSheep_BaseColor.png"
       }
    ],
