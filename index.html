@@ -200,40 +200,77 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       // specified transform.
       function addARObjectAt(matrix) {
         var x = Math.floor((Math.random() * 5) + 1);
-        if(x == 1){
-          let newObj = arObject.clone();
-          newObj.visible = true;
-          newObj.matrix = matrix;
-          scene.addNode(newObj);
-          objs.push(newObj);
-        }
-        else if(x == 2){
-          let newObj2 = arObject2.clone();
-          newObj2.visible = true;
-          newObj2.matrix = matrix;
-          scene.addNode(newObj2);
-          objs.push(newObj2);
-        }
-        else if(x == 3){
-          let newObj3 = arObject3.clone();
-          newObj3.visible = true;
-          newObj3.matrix = matrix;
-          scene.addNode(newObj3);
-          objs.push(newObj3);
-        }
-        else if(x == 4){
-          let newObj4 = arObject4.clone();
-          newObj4.visible = true;
-          newObj4.matrix = matrix;
-          scene.addNode(newObj4);
-          objs.push(newObj4);
-        }
-        else{
-          let newObj5 = arObject5.clone();
-          newObj5.visible = true;
-          newObj5.matrix = matrix;
-          scene.addNode(newObj5);
-          objs.push(newObj5);
+        //if(x == 1){
+        //  let newObj = arObject.clone();
+        //  newObj.visible = true;
+        //  newObj.matrix = matrix;
+        //  scene.addNode(newObj);
+        //  objs.push(newObj);
+        //}
+        //else if(x == 2){
+        //  let newObj2 = arObject2.clone();
+        //  newObj2.visible = true;
+        //  newObj2.matrix = matrix;
+        //  scene.addNode(newObj2);
+        //  objs.push(newObj2);
+        //}
+        //else if(x == 3){
+        //  let newObj3 = arObject3.clone();
+        //  newObj3.visible = true;
+        //  newObj3.matrix = matrix;
+        //  scene.addNode(newObj3);
+        //  objs.push(newObj3);
+        //}
+        //else if(x == 4){
+        //  let newObj4 = arObject4.clone();
+        //  newObj4.visible = true;
+        //  newObj4.matrix = matrix;
+        //  scene.addNode(newObj4);
+        //  objs.push(newObj4);
+        //}
+        //else{
+        //  let newObj5 = arObject5.clone();
+        //  newObj5.visible = true;
+        //  newObj5.matrix = matrix;
+        //  scene.addNode(newObj5);
+        //  objs.push(newObj5);
+        //}
+        switch(x){
+            case 1:
+              let newObj = arObject.clone();
+              newObj.visible = true;
+              newObj.matrix = matrix;
+              scene.addNode(newObj);
+              objs.push(newObj);
+              break;
+            case 2:
+              let newObj2 = arObject2.clone();
+              newObj2.visible = true;
+              newObj2.matrix = matrix;
+              scene.addNode(newObj2);
+              objs.push(newObj2);
+              break;
+            case 3:
+              let newObj3 = arObject3.clone();
+              newObj3.visible = true;
+              newObj3.matrix = matrix;
+              scene.addNode(newObj3);
+              objs.push(newObj3);
+              break;
+            case 4:
+              let newObj4 = arObject4.clone();
+              newObj4.visible = true;
+              newObj4.matrix = matrix;
+              scene.addNode(newObj4);
+              objs.push(newObj4);
+              break;
+            case 5:
+              let newObj5 = arObject5.clone();
+              newObj5.visible = true;
+              newObj5.matrix = matrix;
+              scene.addNode(newObj5);
+              objs.push(newObj5);
+              break;
         }
 
         // For performance reasons if we add too many objects start
