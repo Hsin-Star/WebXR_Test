@@ -34,7 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <body>
     <header>
       <details open>
-        <summary>Hit Test 10</summary>
+        <summary>Hit Test 11</summary>
         <p>
           This sample demonstrates use of hit testing to place virtual objects on real-world surfaces.
         </p>
@@ -170,15 +170,18 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         var x = Math.floor((Math.random() * 2) + 1);
         if(x == 1){
           let newObj = arObject.clone();
+          newObj.visible = true;
+          newObj.matrix = matrix;
+          scene.addNode(newObj);
+          objs.push(newObj);
         }
         else{
-          let newObj = arObject.clone();
+          let newObj2 = arObject2.clone();
+          newObj2.visible = true;
+          newObj2.matrix = matrix;
+          scene.addNode(newObj2);
+          objs.push(newObj2);
         }
-        newObj.visible = true;
-        newObj.matrix = matrix;
-        scene.addNode(newObj);
-
-        objs.push(newObj);
 
         // For performance reasons if we add too many objects start
         // removing the oldest ones to keep the scene complexity
