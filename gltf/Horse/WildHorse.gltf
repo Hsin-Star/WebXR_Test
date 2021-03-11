@@ -136,7 +136,6 @@
    ],
    "materials" : [
       {
-         "doubleSided" : true,
          "name" : "WildHorse_mat",
          "pbrMetallicRoughness" : {
             "baseColorFactor" : [ 0.5, 0.5, 0.5, 1 ],
