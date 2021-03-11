@@ -143,7 +143,6 @@
    "materials" : [
       {
          "alphaMode" : "OPAQUE",
-         "doubleSided" : true,
          "name" : "Rhinoceros_mat",
          "pbrMetallicRoughness" : {
             "baseColorFactor" : [ 0.5, 0.5, 0.5, 1 ],
