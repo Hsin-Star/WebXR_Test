@@ -88,8 +88,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       //vec3.set(shadow.scale, 0.15, 0.15, 0.15);
       //arObject.addNode(shadow);
 
-      const MAX_FLOWERS = 5;
-      let flowers = [];
+      const MAX_OBJS = 5;
+      let objs = [];
 
       // Ensure the background is transparent for AR.
       scene.clear = false;
@@ -172,13 +172,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         newFlower.matrix = matrix;
         scene.addNode(newFlower);
 
-        flowers.push(newFlower);
+        objs.push(newFlower);
 
         // For performance reasons if we add too many objects start
         // removing the oldest ones to keep the scene complexity
         // from growing too much.
-        if (flowers.length > MAX_FLOWERS) {
-          let oldFlower = flowers.shift();
+        if (objs.length > MAX_OBJS) {
+          let oldFlower = objs.shift();
           scene.removeNode(oldFlower);
         }
       }
