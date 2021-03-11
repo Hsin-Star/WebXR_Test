@@ -17552,7 +17552,6 @@
       {
          "alphaCutoff" : 0.5,
          "alphaMode" : "OPAQUE",
-         "doubleSided" : false,
          "emissiveFactor" : [ 0, 0, 0 ],
          "extras" : {
             "__iag_" : true
