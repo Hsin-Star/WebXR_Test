@@ -82,13 +82,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       //space.scale = [0.01, 0.01, 0.01];
       //arObject2.addNode(space);
 
-      let BighornSheep = new Gltf2Node({url: 'gltf/BighornSheep/BighornSheep.gltf'});
-      BighornSheep.scale = [0.05, 0.05, 0.05];
-      arObject.addNode(BighornSheep);
+      //let BighornSheep = new Gltf2Node({url: 'gltf/BighornSheep/BighornSheep.gltf'});
+      //BighornSheep.scale = [0.05, 0.05, 0.05];
+      //arObject.addNode(BighornSheep);
       
-      let space = new Gltf2Node({url: 'gltf/space/space.gltf'});
-      space.scale = [0.01, 0.01, 0.01];
-      arObject2.addNode(space);
+      let Cat = new Gltf2Node({url: 'gltf/Cat/Mesh_Cat.gltf'});
+      Cat.scale = [0.05, 0.05, 0.05];
+      arObject.addNode(Cat);
+      
+      let Dog = new Gltf2Node({url: 'gltf/Dog/Mesh_Beagle.gltf'});
+      Dog.scale = [0.01, 0.01, 0.01];
+      arObject2.addNode(Dog);
       
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
