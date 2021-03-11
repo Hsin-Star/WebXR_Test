@@ -141,6 +141,7 @@
    ],
    "materials" : [
       {
+         "alphaMode" : "OPAQUE",
          "name" : "None",
          "pbrMetallicRoughness" : {
             "baseColorTexture" : {
