@@ -143,7 +143,6 @@
    "materials" : [
       {
          "alphaMode" : "OPAQUE",
-         "doubleSided" : true,
          "name" : "lambert2SG",
          "pbrMetallicRoughness" : {
             "baseColorFactor" : [ 1, 1, 1, 1 ],
