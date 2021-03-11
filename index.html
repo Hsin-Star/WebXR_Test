@@ -70,6 +70,18 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject2.visible = false;
       scene.addNode(arObject2);
       
+      let arObject3 = new Node();
+      arObject3.visible = false;
+      scene.addNode(arObject3);
+      
+      let arObject4 = new Node();
+      arObject4.visible = false;
+      scene.addNode(arObject4);
+      
+      let arObject5 = new Node();
+      arObject5.visible = false;
+      scene.addNode(arObject5);
+      
       let reticle = new Gltf2Node({url: 'gltf/reticle/reticle.gltf'});
       reticle.visible = false;
       scene.addNode(reticle);
@@ -82,17 +94,25 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       //space.scale = [0.01, 0.01, 0.01];
       //arObject2.addNode(space);
 
-      //let BighornSheep = new Gltf2Node({url: 'gltf/BighornSheep/BighornSheep.gltf'});
-      //BighornSheep.scale = [0.05, 0.05, 0.05];
-      //arObject.addNode(BighornSheep);
-      
-      let Cat = new Gltf2Node({url: 'gltf/Cat/Mesh_Cat.gltf'});
-      Cat.scale = [0.005, 0.005, 0.005];
-      arObject.addNode(Cat);
+      let BighornSheep = new Gltf2Node({url: 'gltf/BighornSheep/BighornSheep.gltf'});
+      BighornSheep.scale = [0.05, 0.05, 0.05];
+      arObject.addNode(BighornSheep);
       
       let Dog = new Gltf2Node({url: 'gltf/Dog/Mesh_Beagle.gltf'});
       Dog.scale = [0.005, 0.005, 0.005];
       arObject2.addNode(Dog);
+      
+      let Cat = new Gltf2Node({url: 'gltf/Cat/Mesh_Cat.gltf'});
+      Cat.scale = [0.005, 0.005, 0.005];
+      arObject3.addNode(Cat);
+      
+      let Horse = new Gltf2Node({url: 'gltf/Horse/WildHorse.gltf'});
+      Horse.scale = [0.005, 0.005, 0.005];
+      arObject4.addNode(Horse);
+      
+      let Rhinoceros = new Gltf2Node({url: 'gltf/Rhinoceros/Rhinoceros.gltf'});
+      Rhinoceros.scale = [0.005, 0.005, 0.005];
+      arObject5.addNode(Rhinoceros);
       
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
@@ -179,7 +199,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       // Adds a new object to the scene at the
       // specified transform.
       function addARObjectAt(matrix) {
-        var x = Math.floor((Math.random() * 2) + 1);
+        var x = Math.floor((Math.random() * 5) + 1);
         if(x == 1){
           let newObj = arObject.clone();
           newObj.visible = true;
@@ -187,12 +207,33 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           scene.addNode(newObj);
           objs.push(newObj);
         }
-        else{
+        else if(x == 2){
           let newObj2 = arObject2.clone();
           newObj2.visible = true;
           newObj2.matrix = matrix;
           scene.addNode(newObj2);
           objs.push(newObj2);
+        }
+        else if(x == 3){
+          let newObj3 = arObject3.clone();
+          newObj3.visible = true;
+          newObj3.matrix = matrix;
+          scene.addNode(newObj3);
+          objs.push(newObj3);
+        }
+        else if(x == 4){
+          let newObj4 = arObject4.clone();
+          newObj4.visible = true;
+          newObj4.matrix = matrix;
+          scene.addNode(newObj4);
+          objs.push(newObj4);
+        }
+        else{
+          let newObj5 = arObject5.clone();
+          newObj5.visible = true;
+          newObj5.matrix = matrix;
+          scene.addNode(newObj5);
+          objs.push(newObj5);
         }
 
         // For performance reasons if we add too many objects start
