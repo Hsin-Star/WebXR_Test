@@ -167,19 +167,25 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       // Adds a new object to the scene at the
       // specified transform.
       function addARObjectAt(matrix) {
-        let newFlower = arObject.clone();
-        newFlower.visible = true;
-        newFlower.matrix = matrix;
-        scene.addNode(newFlower);
+        var x = Math.floor((Math.random() * 2) + 1);
+        if(x == 1){
+          let newObj = arObject.clone();
+        }
+        else{
+          let newObj = arObject.clone();
+        }
+        newObj.visible = true;
+        newObj.matrix = matrix;
+        scene.addNode(newObj);
 
-        objs.push(newFlower);
+        objs.push(newObj);
 
         // For performance reasons if we add too many objects start
         // removing the oldest ones to keep the scene complexity
         // from growing too much.
         if (objs.length > MAX_OBJS) {
-          let oldFlower = objs.shift();
-          scene.removeNode(oldFlower);
+          let oldObj = objs.shift();
+          scene.removeNode(oldObj);
         }
       }
 
