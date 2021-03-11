@@ -74,14 +74,22 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       reticle.visible = false;
       scene.addNode(reticle);
       
-      let flower = new Gltf2Node({url: 'gltf/BighornSheep/BighornSheep.gltf'});
-      flower.scale = [0.1, 0.1, 0.1];//flower 0.6
-      arObject.addNode(flower);
+      //let flower = new Gltf2Node({url: 'gltf/sunflower/sunflower.gltf'});
+      //flower.scale = [0.6, 0.6, 0.6];
+      //arObject.addNode(flower);
+      
+      //let space = new Gltf2Node({url: 'gltf/space/space.gltf'});
+      //space.scale = [0.01, 0.01, 0.01];
+      //arObject2.addNode(space);
+
+      let BighornSheep = new Gltf2Node({url: 'gltf/BighornSheep/BighornSheep.gltf'});
+      BighornSheep.scale = [0.05, 0.05, 0.05];
+      arObject.addNode(BighornSheep);
       
       let space = new Gltf2Node({url: 'gltf/space/space.gltf'});
       space.scale = [0.01, 0.01, 0.01];
       arObject2.addNode(space);
-
+      
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
       //let shadow = new DropShadowNode();
