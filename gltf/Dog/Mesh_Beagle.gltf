@@ -141,7 +141,7 @@
    ],
    "materials" : [
       {
-         "name" : "lambert2SG",
+         "name" : "None",
          "pbrMetallicRoughness" : {
             "baseColorTexture" : {
                "index" : 0,
