@@ -141,8 +141,6 @@
    ],
    "materials" : [
       {
-         "alphaMode" : "OPAQUE",
-         "doubleSided" : true,
          "name" : "None",
          "pbrMetallicRoughness" : {
             "baseColorTexture" : {
