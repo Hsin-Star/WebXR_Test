@@ -93,7 +93,6 @@
    "buffers" : [
       {
          "byteLength" : 72624,
-         "name" : "buffer-0",
          "uri" : "Mesh_Beagle.bin"
       }
    ],
