@@ -145,7 +145,6 @@
          "alphaMode" : "OPAQUE",
          "name" : "lambert2SG",
          "pbrMetallicRoughness" : {
-            "baseColorFactor" : [ 1, 1, 1, 1 ],
             "baseColorTexture" : {
                "index" : 0,
                "texCoord" : 0
